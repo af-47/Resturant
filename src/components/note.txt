@@ -1,0 +1,8 @@
+api call in js
+--------------
+
+AJAX
+
+-XMLhttp
+-fetch
+-asynch await

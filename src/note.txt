@@ -1,0 +1,113 @@
+1) WEBSITES
+------------
+
+* REACT BOOTSTRAP
+* BOOTSWATCH
+
+2) AJAX
+
+* fetch
+* asynch await
+
+3) Redirection in React
+------------------------
+
+* react-router-dom
+      - npm i react-router-dom
+
+* import  { 
+           BrowserRouter as router - all routing need components
+          ,Routes                  - to set paths for each components
+          ,Route                   - more than 1 path
+          } from 'react-router-dom'
+
+4) USEPARAMS
+-------------
+
+* Hook used to access params from component url.
+
+
+5) coupling
+------------
+
+* Many connection between  parent and child.
+* if A share data to B then to C. if B has error then C cannot get data . This error is called Prop drilling.
+
+* ie..  in coupling , if any intermediate component have any error all other childs will not work.                                                                                               --------------
+* to avoid this we use REDUX
+                      -----
+
+6) REDUX
+----------
+
+* to avoid prop drilling we need to reduce coupling and make all components independent.
+* for this react introduced a new tech,
+   - State Management Technology - REDUX. 
+
+7) REDUX process
+-----------------
+* create a new js file to keep this states, all the components can access js file   
+* But cant update datas in file.
+  
+ -ACTION - a file with all logics to update state.
+ -DISPATCH - method used to dispatch the logic in action file when the component need state updation.
+ -REDUCER - update the datas in js file according to payload response get from action file.
+
+
+8) REDUX libraries
+------------------
+
+1. REDUX
+2. REACT REDUX
+3. REDUX-THUNK
+
+* createStore() - method used to create store in js file.
+                - 2 arguments
+                  
+                  1. REDUCER
+                  2. Middleware
+
+                    MIDDLEWARE
+                   ------------
+
+   * for token verification , Manage API request
+
+   * In REDUX we use Middleware to change Synchronous REDUX to Asynchronous REDUX
+                  ----------
+    (use change it to asynchronous because we want to use API calls which works only in asynchronous) 
+                  
+
+
+* applyMiddleware() - Method in REDUXto apply middleware.
+
+* combineReducers() - Method in REDUX used to combine all reducers in JS 
+
+* THUNK - Used to create middleware in REDUX-THUNK.
+
+
+
+1. create store
+2. apply store in index.js
+   * provider - its a tag used to pass the store.(react-redux)
+   
+
+10) AXIOS - Module used to make http methods. (API call) 
+----------
+
+* npm i axios
+
+useDispatch - hook used to dispatch actions in components - react-redux
+
+useSelector - hook to access datas from store to components . 
+
+
+
+11)TO START RESTAURENT APP
+===========================
+
+
+* cmd - code .
+* cmd - npm start
+
+
+*npx create-react-app appname ------to create react folder
